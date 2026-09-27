@@ -493,6 +493,21 @@ scored/advisory split at all. §2 commits to ABN(scored) and defines no merged f
 disclosed as an estimate of the wrong quantity rather than presented as the result. What is certain is the direction
 and the population: 860 rows leave, all of them in a scored dimension, and none enter.
 
+**2026-09-27 — one change to the hotspot (D15) published population.** Recorded while all seventeen languages
+stood at `g2_await` with **zero passes of the 2026-08-01 round begun**, and while production ran an engine that
+contains neither commit of the change, so no published result spans it.
+
+| Changed | Not changed |
+|---|---|
+| A **hotspot's complexity is the most complex body its churn touched**, not the file's most complex body (D15, every modelled language). A row published because an untouched body elsewhere in the file was complex did not describe the risk of the change it counted. Measured on 35 OSS repositories, both grains, engine the only variable: **405 → 350 D15 rows**, 13 of the 17 repositories with any hotspot moved, **zero rows added and zero scores lowered**, as the construction guarantees. | **The churn window, the complexity floor, the top-10 summed score and every other D15 rule.** No row can enter; the published population can only shrink, and each surviving row's magnitude can only fall. |
+
+★ **What the sample does and does not establish.** It is 35 of 348 repositories, the first two per corpus
+directory by `sha1(name)`, fixed before any result was read, so its per-language counts are specimens, not
+rates. It establishes the **direction** — no exception in 35 repositories, and the reason it holds for every
+repository: a body a change touched can never be more complex than the file's worst body. Cycle-1 D15 rows were
+measured at file grain; the rows that leave at body grain are not "fixed noise", and any cycle-over-cycle D15
+comparison must say so.
+
 ## 5. Confidence intervals
 
 Every published proportion carries a **cluster-aware bootstrap 95% confidence interval** as the **primary**
