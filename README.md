@@ -1,23 +1,23 @@
-# watchdog-benchmark
+# cca-benchmark
 
-The public **method, evidence, and tooling** behind Watchdog's code-quality and noise claims — so a stranger
+The public **method, evidence, and tooling** behind CCA's code-quality and noise claims — so a stranger
 with no access to us can check the numbers. "Ask the other tools for theirs."
 
-Watchdog (by [canine.dev](https://watchdog.canine.dev)) runs a scheduled codebase survey and produces one
-reproducible 0–100 Codebase Assurance Index with a ranked "what to fix next". This repository is where we publish
+CCA, the Canine Code Analyzer by [Canine Development](https://canine.dev), runs a scheduled codebase survey and produces one
+reproducible 0–100 Code Assurance Index with a ranked "what to fix next". This repository is where we publish
 **how we measure our own signal-to-noise**, the **data** a published result rests on, and the **open scripts** to
-recompute it. If Watchdog says its noise is *X%*, everything you'd need to audit that claim lives here.
+recompute it. If CCA says its noise is *X%*, everything you'd need to audit that claim lives here.
 
 ## This is not CAI, on purpose
 
 Two different things, kept at arm's length in two repositories:
 
 - **[CAI](https://github.com/code-assurance-initiative/CodeAssuranceIndex)** ([codeassuranceindex.info](https://codeassuranceindex.info)) — the open **standard**:
-  how *any* Codebase Assurance Index score is made and verified. Vendor-neutral by design; anyone can implement it.
-- **This repo (`watchdog-benchmark`)** — **one product's self-measurement**: how noisy *Watchdog* is, measured
-  against a published protocol. This is Watchdog's evidence, not the standard.
+  how *any* Code Assurance Index score is made and verified. Vendor-neutral by design; anyone can implement it.
+- **This repo (`cca-benchmark`)** — **one product's self-measurement**: how noisy *CCA* is, measured
+  against a published protocol. This is CCA's evidence, not the standard.
 
-Folding a vendor's self-measurement into the neutral standard would quietly make "open standard" mean "Watchdog's
+Folding a vendor's self-measurement into the neutral standard would quietly make "open standard" mean "CCA's
 home turf". So they stay separate. The *score's* reproducibility is a CAI matter; the *noise measurement* is here.
 
 ## What's here
@@ -46,7 +46,7 @@ Until a result clears that bar we publish the **method** and the **target**, nev
   five-class taxonomy on a **blind rotating holdout** — a ratchet of **< 5% → < 2.5% → < 1%** as the engine earns
   each. (ABN was called an "effective false-positive rate" through protocol 1.0; the ratio is unchanged, but that
   term denotes an observed user-behaviour event we do not measure. See `METHOD.md` §12.)
-- **No achieved Watchdog noise number** appears anywhere here (or in our marketing) until a fresh-holdout run is
+- **No achieved CCA noise number** appears anywhere here (or in our marketing) until a fresh-holdout run is
   human-validated. When it is, the full run — the published draw, raw findings, every verdict, agreement statistics —
   publishes into `data/` and you can re-run the arithmetic yourself with `tools/noise_stats.py`.
 

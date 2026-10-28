@@ -1,7 +1,7 @@
 # Reproduce a published number
 
 When a measured result is published into [`data/`](data/), you can check it **three independent ways** — none of
-which needs Watchdog's engine. (The engine is private; we publish its *findings* as data, and you audit those.)
+which needs CCA's engine. (The engine is private; we publish its *findings* as data, and you audit those.)
 
 Each published run is a directory `data/<run-id>/` containing: the published `draw.json` (seed, sampler version,
 the drawn repos with the commit each was measured at, recency strata, and every discard with its reason), each
@@ -41,7 +41,7 @@ raw human verdict is published so you can see where we split.
 
 Pick any repository from the manifest, check it out at the pinned SHA, and classify our findings on it yourself
 under the five-class taxonomy. This is the human audit G2 requires — done in the open. Unresolvable calls in a
-Watchdog self-measurement default *against* Watchdog, so if you and we disagree on a boundary case and you can't
+CCA self-measurement default *against* CCA, so if you and we disagree on a boundary case and you can't
 resolve it, count it as noise on us.
 
 ## …and the full end-to-end
@@ -49,5 +49,5 @@ resolve it, count it as noise on us.
 To go all the way — clone the drawn repos at the commits they were measured at, run **your own** scanner over
 them, judge its
 findings with the same prompt, and compute its noise the same way. That is the head-to-head the method is built
-for. We publish *our* findings, not our engine, so you can't re-run Watchdog itself — but you can hold any tool,
+for. We publish *our* findings, not our engine, so you can't re-run CCA itself — but you can hold any tool,
 including ours, to the identical, published standard. Ask the other tools for theirs.

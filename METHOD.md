@@ -1,6 +1,6 @@
-# The Watchdog noise-measurement protocol
+# The CCA noise-measurement protocol
 
-**Version 2.0 (public).** This is the frozen method by which Watchdog measures its own — or any tool's — noise.
+**Version 2.0 (public).** This is the frozen method by which CCA measures its own — or any tool's — noise.
 It is fixed *before* any measured run, so no methodological choice can be made after seeing a number we like.
 
 Read this with [`REPRODUCE.md`](REPRODUCE.md) (how to check a result) and
@@ -406,7 +406,7 @@ A number is publishable only when its gates are green. Publication is mechanical
 - **★ G3d — ONE REPOSITORY MUST NOT BE ABLE TO CARRY A LANGUAGE'S NUMBER (added 2026-08-15).**
 
   A pooled rate over findings lets a single large or unusual repository dominate the figure for its
-  whole language. Watchdog observed this directly: one repository accounted for the bulk of a language's
+  whole language. CCA observed this directly: one repository accounted for the bulk of a language's
   measured noise, which made every comparison involving that language a comparison about that
   repository.
 
@@ -579,13 +579,13 @@ The standing answer to any challenge is: **run it.**
 
 ## 11. The target, and the discipline
 
-Watchdog's official bar is **ABN(scored) below 5%** — audited broad noise over the dimensions that can move a
+CCA's official bar is **ABN(scored) below 5%** — audited broad noise over the dimensions that can move a
 user's score — on a blind rotating
 holdout under the broad taxonomy above — a target, and a deliberately demanding one (broad-definition, stricter
 than the narrow-precision numbers most tools quote). The ratchet is **< 5% → < 2.5% → < 1%**, each a separate
 result as the engine earns it.
 
-**No achieved Watchdog noise number is stated as fact until a fresh-holdout run is human-validated** — until then,
+**No achieved CCA noise number is stated as fact until a fresh-holdout run is human-validated** — until then,
 the target and this method are the whole claim.
 
 ## 12. Version history
@@ -599,6 +599,8 @@ the target and this method are the whole claim.
 | The holdout is **rotating and drawn per cycle from a published generated seed** (§4 G1), replacing a once-sealed manifest. Nothing is permanently consumed. | That no published measurement runs on repositories chosen after their results were known — the property the sealed design existed to guarantee. |
 | **ABN carries its dimension scope in the definition** (§2): the committed number is **ABN(scored)**, the advisory rate publishes beside it, and no merged figure is defined. §3.1 requires reclassification to be published. | The denominator's definition *within* a given scope — the arithmetic is identical, only the scope is now named. |
 | §8 adds mechanical **concentration detection** and a disclosure requirement. | The published statistic remains the pooled ratio of §2. |
+
+**Editorial note, 2026-10-28.** From this date the product this protocol measures is named CCA, the Canine Code Analyzer, and this repository carries that name (the old address redirects). Only the name changed: no rule, threshold, definition or gate of version 2.0 did.
 
 Earlier versions of this file are in the repository history; no published result has been recomputed under 2.0
 that was published under 1.0, because no result had yet cleared G2 when 2.0 was adopted.

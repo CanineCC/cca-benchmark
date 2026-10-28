@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""noise_stats.py — recompute a Watchdog noise measurement from a verdicts file.
+"""noise_stats.py — recompute a CCA noise measurement from a verdicts file.
 
 Open, dependency-light (Python 3 stdlib only). Given a file of per-finding verdicts, it recomputes the pooled
 five-class noise rate, the PRIMARY interval (a cluster-aware bootstrap that resamples by repository), the Wilson
@@ -137,7 +137,7 @@ def report(label, rows, threshold_pct):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Recompute a Watchdog noise measurement from a verdicts file.")
+    ap = argparse.ArgumentParser(description="Recompute a CCA noise measurement from a verdicts file.")
     ap.add_argument("verdicts", help="CSV or JSONL of per-finding verdicts (see verdicts.schema.json)")
     ap.add_argument("--by-language", action="store_true", help="also break the number down per language")
     ap.add_argument("--threshold", type=float, default=10.0, help='the "< X%%" claim to test (default 10; the G4 gate)')

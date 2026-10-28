@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/CanineCC/watchdog-benchmark/tools/verdicts.schema.json",
-  "title": "Watchdog benchmark — per-finding verdicts",
+  "$id": "https://github.com/CanineCC/cca-benchmark/tools/verdicts.schema.json",
+  "title": "CCA benchmark — per-finding verdicts",
   "description": "One record per audited finding. A published run ships one of these per tool; noise_stats.py recomputes the number from it. CSV form uses the same column names as these properties.",
   "type": "array",
   "items": {

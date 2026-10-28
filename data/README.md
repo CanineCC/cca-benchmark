@@ -24,7 +24,7 @@ or re-derive it the other two ways in [`../REPRODUCE.md`](../REPRODUCE.md).
 
 ## Status
 
-_No measured run is published yet._ Watchdog's first result publishes here when a blind rotating-holdout run is
+_No measured run is published yet._ CCA's first result publishes here when a blind rotating-holdout run is
 human-validated under the target (see `../METHOD.md` §11). Until then the method, the judge, and the tooling above
 are the claim — and the target is **< 5% audited broad-noise (ABN)** over scored dimensions, not an achieved
 figure.

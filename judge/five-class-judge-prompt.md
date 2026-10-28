@@ -60,4 +60,4 @@ never carries a published number.
   the brand.
 - Pin the model and record its id with the run. A machine judge is an oracle and can be wrong; that is exactly why
   G2 anchors it to two independent humans and publishes every raw verdict.
-- Unresolvable cases in a Watchdog self-measurement default **against Watchdog** (toward noise on our findings).
+- Unresolvable cases in a CCA self-measurement default **against CCA** (toward noise on our findings).
